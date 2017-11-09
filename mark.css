@@ -1,0 +1,306 @@
+/*******************************
+   Generals and Fonts and Links
+******************************/
+* {box-sizing: border-box;}
+
+html{
+   padding: 0;
+   margin: 0;
+   }
+
+body{
+   height: 100%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   color: #000;
+   background: white;
+   }
+
+img{
+   border: none;}
+
+p{ 
+   margin: 0;
+   padding: 0;
+   color: white;}
+
+a{text-decoration: none;}
+
+h2{
+   margin-top: 6px;
+   margin-bottom: 2px;
+   padding: 0px;
+   font: normal 14px/0.5 'Montserrat', sans-serif;
+   color: red;   /**#3FEB00**/
+   }
+
+/******************
+   Top-balk and Footer
+*****************/
+
+#balk{
+   position: relative;
+   width: 100%;
+   height: 22px;
+   margin: 0;
+   border-top: 2px solid red;
+   background: black;
+}
+
+#footer{
+   position: relative;
+   width: 100%;
+   height: 22px;
+   margin-top: 4px;
+   background: pink;
+}
+
+#footer a{
+   font: normal 11px/14px Open Sans, sans-serif;
+   color: #808080;
+}
+
+#footer p{
+   float: right;
+   font: normal 11px/14px Open Sans, sans-serif;
+   color: #808080;
+   padding: 0;
+}
+
+#footer a:hover{
+   color: red;
+}
+
+/***********************************
+   Navigation menu with active tabs
+**********************************/
+
+#head{
+   position: relative;
+   width: 100%;
+   height: 29px;
+   margin: 0;
+   border-top: 2px solid red;
+   background: grey;
+}
+
+#head ul#menu{
+   position: relative;
+   float: left;
+   padding: 0;
+   margin: 0;
+   left: 200px;
+   list-style: none;
+   background: yellow;
+}
+
+#head ul#menu li{
+   float: left;
+   text-align: center;
+}
+
+#head ul#menu a{
+   display: block;
+   width: 110px;
+   height: 27px;
+   color: black;
+   border-right: 1px solid #000;
+   font: normal 14px/27px 'Ubuntu Condensed', sans-serif;
+}
+
+#head ul#menu a#balkje{
+   border-left: 1px solid #000;
+}
+
+#head ul#menu a:hover{
+   width: 110px;
+   color: white;
+   background: black;
+}
+
+body#mark li#mark-active a,
+body#filmo li#filmo-active a,
+body#contact li#contact-active a{
+   width: 110px;
+   height: 27px;
+   color: white;
+   background: black;
+}
+
+    /* For mobile phones: */
+
+@media only screen and (max-width: 500px){
+
+#head{
+   position: relative;
+   height: 84px;
+}
+
+
+#head ul#menu{
+   left: 0;
+   width: 100%;
+    }
+
+#head ul#menu li{
+   clear: both;
+   width: 100%;
+}
+
+#head ul#menu a {
+    width: 100%;
+    border-top: 2px solid red;
+    }
+    
+#head ul#menu a#balkje{
+   border: 0;
+}
+
+#head ul#menu a:hover{
+   width: 100%;
+}
+
+body#mark li#mark-active a,
+body#filmo li#filmo-active a,
+body#contact li#contact-active a{
+width: 100%;
+}
+
+}
+
+/*******************************************
+   Container div met tekst eigenschappen
+******************************************/
+
+body #container{
+   position: relative;
+   width: 100%;
+   height: 600px;
+   background: black;
+   border-bottom: 2px solid red;
+   border-top: 2px solid red;
+}
+
+body#filmo #container{
+   width: 100%;
+   height: 100%;
+   background: black;
+   border-bottom: 2px solid red;
+   border-top: 2px solid red;
+}
+
+body #container #flash{
+   position: relative;
+   top: 30px;
+   margin-left: 100px;
+   background: black;
+}
+
+body #container #video{
+   max-width: 100%;
+   height: auto;
+   background: green;
+}
+
+@media only screen and (max-width: 500px){
+
+body #container{
+   height: 400px;
+}
+
+body #container #flash{
+   margin: 10px;
+}
+
+}
+
+
+/***********************************
+   Eigenschappen apart per pagina
+**********************************/
+
+#tekst-contact p{
+   padding: 200px 0 0 200px;
+}
+
+#tekst-contact a:hover{
+   color: white;
+}
+
+#tekst-contact a{
+   color: red;
+   font: normal 16px/18px Open Sans, sans-serif;
+}
+
+/***********************************
+   Filmografie pagina met tabellen
+**********************************/
+
+#tekst-filmo{
+   float: left;
+   width: 100%; //* 1040px *//
+   height: 100%;
+   text-align: left;
+   padding-top: 0;
+   background: black;
+}
+
+#tekst-filmo h2{
+   padding: 20px 0 10px 10px;
+   background: gree;
+}
+
+#tekst-filmo table
+{
+   float: left;
+   margin-left: 20px;
+   margin-bottom: 20px;
+   border-collapse: collapse;
+   font: 400 11px/1.4 'Open Sans', Helvetica, sans-serif;
+   text-align: center;
+   color: white;
+   background: yello;
+}
+
+#tekst-filmo table tr
+{
+   text-align: left;
+}
+
+body#filmo #container #tekst-filmo .table0
+{
+   width: 800px;
+   float: left;
+}
+
+body#filmo #container #tekst-filmo #table1
+{
+   width: 1020px;
+   float: left;
+}
+
+body#filmo #container #tekst-filmo .table2
+{
+   width: 510px;
+   float: left;
+}
+
+body#filmo #container #tekst-filmo .table3
+{
+   width: 510px;
+   float: left;
+}
+
+
+body#filmo #container #tekst-filmo .table7
+{
+   width: 510px;
+   float: left;
+}
+
+body#filmo #container #tekst-filmo #table8
+{
+   width: 1000px;
+   float: left;
+}

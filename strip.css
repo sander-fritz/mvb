@@ -1,0 +1,61 @@
+#slider-container{
+  float: left;
+  position: relative;
+  top: 10px;
+  width: 700px;
+  height: 112px;
+  margin-left: 70px;
+  margin-top: 60px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  background-color: black;
+}
+
+#strip-container{
+  position: relative;
+  left: 35px;
+  width: 630px;
+  height: 108px;
+  overflow: hidden;
+  background-color: black;
+}
+
+#strip{
+  position: relative;
+  background-color: black;
+  width: 1500px;
+  height: 108px;
+}
+
+.thumbs{
+  position: relative;
+  top: 9px;
+  margin-right: 22px;
+  display: block;
+  float: left;
+  border: 3px solid red;
+  width: 91px;
+  height: 91px;
+}
+
+.thumbs:hover{
+  border-color: green;
+}
+
+@media only screen and (max-width: 500px){
+
+#slider-container{
+    width: 200px;
+    margin: 30px;
+}
+
+#strip-container{
+    width: 130px;
+}
+
+
+}
+
+
+
+
